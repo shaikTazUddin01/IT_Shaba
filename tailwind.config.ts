@@ -1,10 +1,12 @@
+import { nextui } from "@nextui-org/theme";
 import type { Config } from "tailwindcss";
-
+import { fontFamily } from "tailwindcss/defaultTheme";
 export default {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/components/(button|navbar|ripple|spinner).js",
   ],
   theme: {
     extend: {
@@ -12,7 +14,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        spaceGrotesk: ["Space Grotesk", ...fontFamily.sans],
+      },
     },
   },
-  plugins: [],
+  plugins: [nextui()],
 } satisfies Config;

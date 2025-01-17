@@ -1,0 +1,15 @@
+.bannerIconAnimation {
+  animation: iconAnimation 14s  infinite;
+}
+
+@keyframes iconAnimation {
+  0% {
+    left: 90px;
+  }
+  50% {
+    left: 0px;
+  }
+  100% {
+    left: 90px;
+  }
+}
