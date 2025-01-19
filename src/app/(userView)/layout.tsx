@@ -5,7 +5,7 @@ import React, { ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="max-w-[1440px] mx-auto">
+    <div className="">
       {/* navbar */}
       <div>
         <MainNavbar />

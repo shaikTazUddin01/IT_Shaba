@@ -6,9 +6,12 @@ import "./style.css";
 const Banner = () => {
   return (
     <div
-      className="min-h-[750px] w-full bg-center bg-cover flex justify-center items-center font-spaceGrotesk relative"
+      className=" w-full bg-center bg-cover font-spaceGrotesk "
       style={{ backgroundImage: `url(${heroBanner.src})` }}
     >
+      <div className="relative min-h-[750px] flex justify-center items-center ">
+
+      
       <div className="max-w-[720px] text-center  text-white mx-auto z-20">
         <h3 className="text-[24px] font-medium bg-gradient-to-r from-transparent to-white/20 inline-block px-8 py-2 rounded-full border mb-5 border-white/20 ">
           It Sheba Digital Agency
@@ -25,10 +28,10 @@ const Banner = () => {
 
         {/* reach out section */}
         <div className="space-x-4 mb-12">
-          <button className="text-[18px] font-medium border-[2px] border-[var(--primaryColor)] text-[var(--primaryColor)] px-6 py-3 rounded-full bg-black/40">
+          <button className="text-[18px] font-medium border-[2px] border-[var(--primaryColor)] bg-[var(--primaryColor)] px-6 py-3 rounded-full ">
             Learn More
           </button>
-          <button className="text-[18px] font-medium border-[2px] border-[var(--primaryColor)] text-[var(--primaryColor)] px-6 py-3 rounded-full bg-black/40">
+          <button className="text-[18px] font-medium border-[2px] border-[var(--primaryColor)] bg-[var(--primaryColor)] px-6 py-3 rounded-full ">
             Contact Us
           </button>
         </div>
@@ -43,6 +46,7 @@ const Banner = () => {
       {/* hero icon */}
       <div className="absolute bottom-0 left-0 z-10 bannerIconAnimation">
         <Image src={heroIcon} alt="heroIcon" />
+      </div>
       </div>
     </div>
   );

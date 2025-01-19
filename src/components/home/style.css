@@ -1,5 +1,5 @@
 .bannerIconAnimation {
-  animation: iconAnimation 14s  infinite;
+  animation: iconAnimation 16s ease-in-out infinite;
 }
 
 @keyframes iconAnimation {
@@ -12,4 +12,9 @@
   100% {
     left: 90px;
   }
+}
+
+.customStroke {
+  -webkit-text-stroke: 1px white; 
+  color: transparent;
 }
