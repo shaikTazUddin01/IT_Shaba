@@ -1,14 +1,15 @@
 "use client";
 import React, { useState } from "react";
 import Image, { StaticImageData } from "next/image";
+import branding from "../../assets/service/branding.png";
+import ui from "../../assets/service/ui.png";
+import grap from "../../assets/service/grap.png";
+import content from "../../assets/service/content.png";
+import deve from "../../assets/service/deve.png";
+import mar from "../../assets/service/mar.png";
+import BackTextHeader from "../shared/BackTextHeader";
 import HeaderTitle from "../shared/HeaderTitle";
 import CustomButton from "../shared/Button";
-import branding from "../../assets/service/branding.png";
-import ui from "../../assets/service/ui.png"
-import grap from "../../assets/service/grap.png"
-import content from "../../assets/service/content.png"
-import deve from "../../assets/service/deve.png"
-import mar from "../../assets/service/mar.png"
 
 interface IOurServices {
   id: number;
@@ -68,18 +69,16 @@ const Service = () => {
   console.log(activeSection);
 
   return (
-    <div className="pt-[25px] pb-[110px]">
+    <div className="py-[110px]">
       {/* header content */}
-      <div className="relative max-w-6xl mx-auto  ">
-        <h1 className="uppercase text-[258px] text-center font-extrabold text-[#5e5d5d33]  ">
-          Services
-        </h1>
-        <div className="absolute flex justify-between items-center w-full top-[35%]">
-          <div className="max-w-[650px]">
+      <div className="relative pt-[110px] pb-20">
+        <BackTextHeader backText="Services" />
+        <div className=" flex justify-between items-center  max-w-7xl mx-auto">
+          <div className="max-w-[650px] -mt-[70px]">
             <HeaderTitle
-              title="What we Offer"
-              subtitle="Top-Notch Services For You"
-              spansubTitle="We Provide"
+              title={"What We Offer"}
+              subtitle={"top-Notch Services for you"}
+              spansubTitle={"We Provide"}
             />
           </div>
           <div className="-mt-10">
@@ -104,7 +103,7 @@ const Service = () => {
           >
             <div
               key={section?.id}
-              className={`flex  gap-5 items-center relative top-0 h-[175px] justify-between max-w-6xl mx-auto `}
+              className={`flex  gap-5 items-center relative top-0 h-[175px] justify-between max-w-7xl mx-auto `}
             >
               <h1 className="text-[44px] w-[20px] font-bold flex-1 uppercase tracking-[0.5px]">
                 {section.title}
