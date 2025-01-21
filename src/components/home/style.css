@@ -18,3 +18,35 @@
   -webkit-text-stroke: 1px white; 
   color: transparent;
 }
+
+/* portfolio */
+
+
+.tab-button {
+  background: transparent;
+  border: 2px solid var(--primaryColor);
+  padding: 10px 20px;
+  color:  var(--primaryColor);
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.tab-button.active {
+  background:  var(--primaryColor);
+  color: #ffffff;
+ 
+}
+
+
+.project-card {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+
