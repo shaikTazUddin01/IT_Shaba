@@ -56,11 +56,11 @@ const OurTeam = () => {
   ];
 
   return (
-    <div className="pt-[150px] pb-[110] max-w-7xl mx-auto">
+    <div className="px-2 xl:px-0 pt-[150px] pb-[110] max-w-7xl mx-auto">
       {/* Header content */}
       <div className="relative">
-        <div className="flex justify-between items-center max-w-7xl mx-auto">
-          <div className="max-w-[550px] -mt-[70px]">
+        <div className="flex flex-col lg:flex-row  justify-between lg:items-center max-w-7xl mx-auto gap-5">
+          <div className="w-full lg:max-w-[550px] -mt-[70px]">
             <HeaderTitle
               title="Our Team"
               spansubTitle="Meet With Our"
@@ -74,7 +74,7 @@ const OurTeam = () => {
       </div>
 
       {/* Team members */}
-      <div className="grid grid-cols-3 gap-5 py-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-10 justify-between w-full mx-auto">
         {/* Member card */}
         {TeamMembers?.map((team, index) => (
           <div
@@ -87,18 +87,18 @@ const OurTeam = () => {
               <Image
                 src={TeamBg}
                 alt="Team background"
-                className="absolute bottom-0 z-10 h-[380px] "
+                className="absolute bottom-0 z-10  h-[250px] md:h-[300px] xl:h-[380px] "
               />
               <Image
                 src={team?.image}
                 alt="Team member"
-                className={`relative z-20 h-[470px] transition-all duration-300  
+                className={`relative z-20 h-[320px] md:h-[400px] xl:h-[470px] transition-all duration-300  
                 ${hover === team?.id ?"filter-none": "filter grayscale" }
                   `}
               />
             </div>
             <div
-              className={`transition-all duration-300  text-white w-[97%] mt-1 rounded-b-lg text-center py-5 ${
+              className={`transition-all duration-300  text-white  xl:w-[97%] mt-1 rounded-b-lg text-center py-5 ${
                 hover === team?.id ? "bg-[var(--primaryColor)]" : "bg-[#525050]"
               }`}
             >

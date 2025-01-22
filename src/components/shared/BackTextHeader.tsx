@@ -12,7 +12,7 @@ const BackTextHeader = ({
       <h1
         className="uppercase text-center font-extrabold text-[#5e5d5d33]"
         style={{
-          fontSize: "22vw",
+          fontSize: "21vw",
         }}
       >
         {backText}

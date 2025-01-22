@@ -73,7 +73,7 @@ const Service = () => {
       {/* header content */}
       <div className="relative pt-[110px] pb-20">
         <BackTextHeader backText="Services" />
-        <div className=" flex justify-between items-center  max-w-7xl mx-auto">
+        <div className="px-2 xl:px-0 flex flex-col lg:flex-row justify-between lg:items-center  max-w-7xl mx-auto">
           <div className="max-w-[650px] -mt-[70px]">
             <HeaderTitle
               title={"What We Offer"}
@@ -81,7 +81,7 @@ const Service = () => {
               spansubTitle={"We Provide"}
             />
           </div>
-          <div className="-mt-10">
+          <div className="lg:-mt-10">
             <CustomButton btnText="View All" />
           </div>
         </div>
@@ -92,7 +92,7 @@ const Service = () => {
         {OurSecvices.map((section) => (
           <div
             key={section?.id}
-            className={` cursor-pointer transition-all ease-in duration-300 border-b border-white/20 ${
+            className={`px-2 xl:px-0 cursor-pointer transition-all ease-in duration-300 border-b border-white/20 ${
               activeSection == section?.id
                 ? "bg-black text-white"
                 : "bg-transparent text-[#6d6d6d]"
@@ -103,23 +103,23 @@ const Service = () => {
           >
             <div
               key={section?.id}
-              className={`flex  gap-5 items-center relative top-0 h-[175px] justify-between max-w-7xl mx-auto `}
+              className={`flex flex-col md:flex-row  md:gap-5 md:items-center relative top-0  md:h-[175px] py-5 md:py-0 md:justify-between max-w-7xl mx-auto `}
             >
-              <h1 className="text-[44px] w-[20px] font-bold flex-1 uppercase tracking-[0.5px]">
+              <h1 className="text-[30px] lg:text-[44px] md:w-[20px] font-bold flex-1 uppercase tracking-[0.5px]">
                 {section.title}
               </h1>
 
               <div
-                className={`absolute left-[45%] transform -translate-x-1/2 transition-all duration-400 ${
+                className={`hidden md:flex absolute left-[45%] transform -translate-x-1/2 transition-all duration-400 ${
                   activeSection === section.id
                     ? "opacity-100 scale-100"
                     : "opacity-0 scale-85"
                 }`}
               >
-                <Image src={section.image} alt="" className="w-[300px]" />
+                <Image src={section.image} alt="" className="w-[210px] lg:w-[300px]" />
               </div>
 
-              <div className="w-[37%] ">
+              <div className="md:w-[37%] ">
                 <p className="text-[13px] ">{section.description}</p>
               </div>
             </div>

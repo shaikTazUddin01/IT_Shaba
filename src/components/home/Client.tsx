@@ -45,7 +45,7 @@ const Client = () => {
     },
   ];
   return (
-    <div className="py-[110px] relative mx-auto overflow-hidden">
+    <div className="px-2 xl:px-0 py-[110px] relative mx-auto overflow-hidden">
       {/* header */}
       <div className="relative pt-[110px] pb-20">
         <BackTextHeader backText="OurClients" />
@@ -60,10 +60,10 @@ const Client = () => {
         </div>
       </div>
       {/* our clients */}
-      <div className="max-w-7xl mx-auto flex gap-8 flex-wrap justify-between  items-center">
+      <div className="max-w-7xl mx-auto flex gap-4 md:gap-8 flex-wrap justify-center lg:justify-between  items-center">
         {clients?.map((item) => {
           return (
-            <div key={item?.id} className="border border-white/50 rounded-md h-[240px] w-[290px] flex justify-center items-center transition-all duration-300 cursor-pointer hover:border-[var(--primaryColor)]">
+            <div key={item?.id} className="border border-white/50 rounded-md h-[100px] w-[130px] md:h-[150px] md:w-[200px] lg:h-[240px] lg:w-[290px] flex justify-center items-center transition-all duration-300 cursor-pointer hover:border-[var(--primaryColor)]">
               <Image src={item?.image} alt="clients"  />
             </div>
           );

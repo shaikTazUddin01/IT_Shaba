@@ -1,74 +1,55 @@
-import React from 'react';
+import React from "react";
 
 const Footer = () => {
-    return (
-        <footer style={{ backgroundColor: '#1a1a1a', color: '#fff', padding: '40px 20px' }}>
-            <div style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                maxWidth: '1200px',
-                margin: '0 auto',
-            }}>
-                {/* Top Section */}
-                <div style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'space-between',
-                    width: '100%',
-                    marginBottom: '20px',
-                }}>
-                    {/* Company Info */}
-                    <div style={{ flex: '1 1 300px', marginBottom: '20px', textAlign: 'center' }}>
-                        <h3 style={{ marginBottom: '10px' }}>Company Name</h3>
-                        <p style={{ lineHeight: '1.6', margin: 0 }}>
-                            Delivering exceptional services with a commitment to quality and customer satisfaction.
-                        </p>
-                    </div>
+  return (
+    <footer className="bg-[#141414] text-white py-10">
+      <div
+        className="px-5 flex flex-col gap-5 lg:flex-row justify-center
+       lg:justify-between max-w-[7xl] mx-auto"
+      >
+        {/* Left Section */}
+        <div className="flex-1">
+          <h2 className="text-3xl font-bold mb-4">
+            Let&apos;s Talk<span className="text-[var(--primaryColor)]">.</span>
+          </h2>
 
-                    {/* Quick Links */}
-                    <div style={{
-                        flex: '1 1 200px',
-                        marginBottom: '20px',
-                        textAlign: 'center',
-                    }}>
-                        <h4 style={{ marginBottom: '10px' }}>Quick Links</h4>
-                        <ul style={{
-                            listStyle: 'none',
-                            padding: 0,
-                            margin: 0,
-                            lineHeight: '2',
-                        }}>
-                            <li><a href="/about" style={{ color: '#fff', textDecoration: 'none' }}>About Us</a></li>
-                            <li><a href="/services" style={{ color: '#fff', textDecoration: 'none' }}>Services</a></li>
-                            <li><a href="/blog" style={{ color: '#fff', textDecoration: 'none' }}>Blog</a></li>
-                            <li><a href="/contact" style={{ color: '#fff', textDecoration: 'none' }}>Contact</a></li>
-                        </ul>
-                    </div>
+          {/* socal media side */}
+          <div className="border border-white/10 inline-flex px-3 md:px-10 py-3 md:py-4 rounded-[12px] bg-gradient-to-r from-transparent to-white/20 text-[13px] md:text-xl gap-4 md:gap-7 font-medium z-50">
+            <button>Facebook</button>
+            <button>Twitter</button>
+            <button>Linkedin</button>
+            <button>Instagram</button>
+          </div>
+        </div>
 
-                    {/* Contact Info */}
-                    <div style={{ flex: '1 1 200px', marginBottom: '20px', textAlign: 'center' }}>
-                        <h4 style={{ marginBottom: '10px' }}>Contact Us</h4>
-                        <p style={{ margin: '0 0 10px' }}>123 Main St, Cityville, ST 56789</p>
-                        <p style={{ margin: '0 0 10px' }}>Phone: (123) 456-7890</p>
-                        <p style={{ margin: 0 }}>Email: info@example.com</p>
-                    </div>
-                </div>
-
-                {/* Social Media */}
-                <div style={{ textAlign: 'center', borderTop: '1px solid #444', paddingTop: '20px', width: '100%' }}>
-                    <p style={{ marginBottom: '10px' }}>Follow Us</p>
-                    <div style={{ display: 'inline-flex', gap: '15px' }}>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '20px', textDecoration: 'none' }}>Facebook</a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '20px', textDecoration: 'none' }}>Twitter</a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '20px', textDecoration: 'none' }}>Instagram</a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', fontSize: '20px', textDecoration: 'none' }}>LinkedIn</a>
-                    </div>
-                    <p style={{ marginTop: '10px', fontSize: '14px', color: '#aaa' }}>© 2025 Company Name. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
-    );
+        {/* Right Section */}
+        <div className=" inline-block lg:w-[25%]  float-right">
+          <h3 className="text-2xl font-semibold mb-4">Get In Touch</h3>
+          <ul className="space-y-3 text-sm">
+            <li>Info@Procus.Com</li>
+            <li>+99(0) 1453 123456</li>
+            <li>1901 Thornridge Cir. Shiloh, Hawaii 81063</li>
+          </ul>
+        </div>
+      </div>
+      <div className="border-t border-gray-800 mt-10 pt-6">
+        <div className="max-w-[7xl] mx-auto px-5 flex flex-col lg:flex-row justify-center items-center md:items-start gap-3 md:justify-between text-sm text-gray-500">
+          <p>All Copyright Reserved &copy; By IT SHABA.</p>
+          <div className="flex gap-6">
+            <a href="#" className="hover:text-white">
+              Terms Of Services
+            </a>
+            <a href="#" className="hover:text-white">
+              Privacy Policy
+            </a>
+            <a href="#" className="hover:text-white">
+              Support
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 };
 
 export default Footer;

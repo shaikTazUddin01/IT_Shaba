@@ -7,9 +7,9 @@ import CustomButton from "../shared/Button";
 const WhyChoose = () => {
   return (
    <div className="bg-black py-[110px]">
-     <div className="grid grid-cols-2 max-w-7xl mx-auto gap-20 items-center">
+     <div className="px-2 xl:px-0 grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto gap-20 items-center">
       <div>
-        <Image src={chooseUs} alt="why chose use" />
+        <Image src={chooseUs} alt="why chose use" className="w-full" />
       </div>
       <div>
         <HeaderTitle
@@ -20,7 +20,7 @@ const WhyChoose = () => {
         <p className="mt-5 tracking-[0.5px] font-medium leading-[25px] text-white">
         Discover why Procus is the right choice for your digital needs. From innovative solutions and collaborative partnerships to a proven track record and dedicated support.
         </p>
-        <ul className="mt-5 text-[#6b6b6b] space-y-1 text-xl tracking-[.5px]">
+        <ul className="mt-5 text-[#6b6b6b] space-y-1 text-[17px] md:text-xl tracking-[.5px]">
           <li className="flex items-center gap-2">
             <span>
               <FaCheckCircle />

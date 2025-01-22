@@ -23,7 +23,7 @@ const page = () => {
         <Client />
         <Portfolio />
       </div>
-      <OurTeam/>
+      <OurTeam/> 
     </div>
   );
 };

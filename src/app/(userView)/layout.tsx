@@ -11,7 +11,9 @@ const layout = ({ children }: { children: ReactNode }) => {
         <MainNavbar />
       </div>
       {/* body */}
-      <div className="min-h-[90vh] pt-10">{children}</div>
+      <div className="min-h-[90vh] pt-10">
+        {children}
+        </div>
       {/* footer */}
       <div>
         <Footer />
